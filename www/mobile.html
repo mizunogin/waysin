@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Waysin is here!</title>
+<style type="text/css">
+body, html {
+    height: 100%;
+    background-color: #FFF 
+}
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .fit { /* set relative picture size */
+    max-width: 100%;
+  }
+  .center {
+    display: block;
+    margin: auto;
+  }
+</style>
+</head>
+<body>
+<img src="full-iphone.jpg" class="center fit" id="fulling" usemap="#planetmap">
+<map name="planetmap">
+  <area shape="rect" coords="0,1599,998,1721" href="https://pixiv.me/waysin966" alt="Pixiv">
+  <area shape="rect" coords="0,1722,998,1841" href="https://www.patreon.com/Hijinzou" alt="Patreon">
+  <area shape="rect" coords="0,1842,998,1963" href="https://twitter.com/waysinhxh" alt="Twitter">
+  <area shape="rect" coords="0,1964,998,2087" href="https://www.plurk.com/waysin" alt="Plurk">
+  <area shape="rect" coords="0,2088,998,2209" href="https://www.tumblr.com/blog/waysin966" alt="Tumblr">
+  <area shape="rect" coords="0,2210,998,2343" href="https://www.hiccears.com/artist-profile.php?apid=271" alt="HicceArs">
+</map>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" language="JavaScript">
+  function set_body_width(){ // set body height = window height
+    $('body').width($(window).width());
+  }
+  $(document).ready(function() {
+    $(window).bind('resize', set_body_width);
+    set_body_width();
+  });
+</script>
+<script src="jquery.rwdImageMaps.min.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+});
+//http://mattstow.com/experiment/responsive-image-maps/rwd-image-maps.html
+
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113976805-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113976805-1');
+</script>
+</body>
+</html>
